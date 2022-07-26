@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div id="clock">
+      <span id="hours"></span>
+      <span class="dot">:</span>
+      <span id="min"></span>
+      <span class="dot">:</span>
+      <span id="sec"></span>
+      <div id="alarm__block">
+        <div>WAKE UP NEO</div>
+        <button class="buttons" id="reset">turn off alarm</button>
+      </div>
+    </div>
+    <div id="button__container">
+      <button class="buttons" id="alarm">Set alarm</button>
+      <div id="alarm__container">
+        <button class="buttons sub" id="submit">submit</button>
+        <input id="alarm__input" type="time" value="00:00" />
+        <label id="repeat__lable" for="repeat"> 24h repeat </label>
+        <input name="repeat" id="repeat" type="checkbox" />
+      </div>
+      <button class="buttons" id="stop">You can stop the time NEO</button>
+      <button class="buttons" id="start">and run it again</button>
+    </div>
+    <script src="./app/script.js"></script>
+  </body>
+</html>

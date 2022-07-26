@@ -1,0 +1,102 @@
+/* @import url('https://fonts.googleapis.com/css?family=Orbitron'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;800&family=Open+Sans:wght@400;500;700&family=PT+Sans&family=PT+Serif&family=Shadows+Into+Light&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/133C.gif');
+  height: 100vh;
+}
+.BG {
+  background-image: url('../img/1337.JPG');
+}
+
+#clock {
+  text-align: center;
+
+  font-family: 'Shadows Into Light', cursive;
+  color: #00ff00;
+  font-size: 75px;
+}
+
+#alarm__block {
+  display: none;
+}
+#alarm__block div {
+  -moz-animation: myfade 2s ease infinite;
+  -webkit-animation: myfade 2s ease infinite;
+}
+
+#button__container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  top: 5%;
+  right: 10%;
+}
+
+#repeat__lable {
+  color: aliceblue;
+  cursor: pointer;
+}
+
+
+.dot {
+  -moz-animation: myfade 1s ease infinite;
+  -webkit-animation: myfade 1s ease infinite;
+}
+
+@-webkit-keyframes myfade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes myfade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.buttons {
+  color: #00ff00;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.buttons:hover {
+  background-color: rgb(255, 255, 255, 50%);
+}
+.buttons:active {
+  background-color: rgb(255, 255, 255, 80%);
+}
+
+
+#alarm__container {
+  display: none;
+}
+#alarm__input {
+  color: #00ff00;
+  border: none;
+
+}
+
+#start {
+  display: none;
+}
